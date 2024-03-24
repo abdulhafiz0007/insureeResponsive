@@ -1,0 +1,552 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/karla-v31-latin-regular.woff2') format('woff2'), 
+    url('./fonts/karla-v31-latin-regular.ttf') format('truetype'), 
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/karla-v31-latin-700.woff2') format('woff2'), 
+    url('./fonts/karla-v31-latin-700.ttf') format('truetype'),
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/dm-serif-display-v15-latin-regular.woff2') format('woff2'), 
+         url('./fonts/dm-serif-display-v15-latin-regular.ttf') format('truetype'), 
+  }
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+.container {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.site-header {
+    position: relative;
+}
+
+.site-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 31px 0;
+}
+
+.logo__img {
+    width: 112px;
+    height: 18px;
+}
+
+.site-header__menu-btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    transition: 0.1s;
+    background-image: url("./images/menu-btn.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+.site-header__links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: none;
+    background-color: #2C2830;
+}
+
+.active .site-header__links {
+    display: block;
+}
+
+.scroll-hidden {
+    overflow: hidden;
+}
+
+.active .site-header__menu-btn {
+    background-image: url("./images/closebtn.svg");
+}
+
+.navbar__link {
+    font-family: "Karla";
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 1.3px;
+    text-decoration-line: none;
+    color: #fff;
+}
+
+.navbar__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 24px;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 24px;
+}
+
+.site-header__viewPlans-link {
+    font-family: "Karla";
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0 24px;
+    text-align: center;
+    text-decoration-line: none;
+    color: #fff;
+    border: 1.5px solid #fff;
+}
+
+
+/* hero section starts  */
+
+.hero-section {
+    background-color:  #2D2641;
+}
+
+.hero-section__hero-img {
+    width: 100%;
+    height: 451px;
+    background-image: url("./images/hero-img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero-section__content-wrapper {
+    display: flex;
+    padding: 100px 24px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section__title {
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: -0.6px;
+    margin: 0;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section__desc {
+    font-family: "Karla";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 32px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section__link {
+    font-family: "Karla";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 0 28.5px;
+    text-align: center;
+    text-decoration-line: none;
+    color: #fff;
+    border: 1.5px solid #fff;
+}
+
+/* offers section starts  */
+
+.offers-section {
+    padding-block: 140px;
+}
+
+.offers-section__top-border {
+    display: block;
+    margin: auto;
+    width: 150px;
+    border-top: 1px solid #C396C6;
+}
+
+.offers-section__title {
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -0.6px;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    color: #2C2830;
+}
+
+.offer-section__list {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    padding: 0;
+    list-style: none;
+}
+
+.offers-section__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offers-section__item-heading {
+    font-family: "DM Serif Display";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38.39px;
+    letter-spacing: -0.3px;
+    color: #2C2830;
+}
+
+.offers-section__item-desc {
+    font-family: "Karla";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: #837D88;
+}
+
+
+/* article section starts  */
+
+.site-article {
+    padding-block: 72px;
+    background-color: #2D2641;
+}
+
+.site-article__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-article__title {
+    font-family: "DM Serif Display";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.56px;
+    text-align: center;
+    color: #fff;
+}
+
+.site-article__link {
+    font-family: "Karla";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 0 24.5px;
+    text-decoration-line: none;
+    color: #fff;
+    border: 1.5px solid #fff;
+}
+
+
+/* footer section starts  */
+
+.site-footer {
+    padding-top: 140px;
+    padding-bottom: 64px;
+}
+
+.site-footer__top-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.site-footer__icon-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+    padding: 0;
+    list-style: none;
+}
+
+.site-footer__info-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.site-footer__info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-footer__item-title {
+    font-family: "Karla";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15.2px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 36px;
+    color: #837D88;
+}
+
+.site-footer__item-desc {
+    font-family: "Karla";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15.2px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #2D2641;
+}
+
+.site-footer__top-border {
+    display: block;
+    margin: auto;
+    width: 327px;
+    border-top: 1px solid #C396C6;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media  only screen and (min-width: 450px) {
+    
+    .site-header__viewPlans-link {
+        width: 327px;
+        margin: auto;
+    }
+    
+    .hero-section__hero-img {
+        background-size: cover;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .site-header__inner {
+        padding: 0;
+    }
+    
+    .site-header__menu-btn {
+        display: none;
+    }
+    
+    .site-header__links {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        background-color: transparent;
+    }
+    
+    .navbar__list {
+        flex-direction: row;
+        gap: 25.5px;
+        margin-right: 33px;
+    }
+    
+    .navbar__link {
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-align: center;
+        color: #837D88;
+    }
+    
+    .site-header__viewPlans-link {
+        display: inline;
+        font-size: 13px;
+        font-weight: 700;
+        width: 146px;
+        margin: 0;
+        letter-spacing: 1.5px;
+        text-align: center;
+        border: 1.5px solid #2C2830;
+        color: #2C2830;
+    }
+    
+    .hero-section__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-section__hero-img {
+        top: 50%;
+        left: 780px;
+        width: 375px;
+        height: 340px;
+        background-image: url("./images/hero-img.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .hero-section__content-wrapper {
+        order: -1;
+    }
+    
+    .hero-section__title {
+        text-align: left;
+    }
+    
+    .hero-section__title-wrapper {
+        width: 300px;
+    }
+    
+    .hero-section__desc-wrapper {
+        width: 400px;
+    }
+    
+    .hero-section__desc {
+        text-align: left;
+    }
+    
+    .hero-section__content-wrapper {
+        align-items: flex-start;
+    }
+
+    .offers-section {
+        padding-top: 275px;
+    }
+    
+    .offer-section__list {
+        flex-direction: row;
+        gap: 56px;
+    }
+    
+    .site-article {
+        background-color: transparent;
+    }
+    
+    .site-article__inner {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-inline: 80.5px;
+        background-color: #2D2641;
+    }
+    
+    .site-article__title-wrapper {
+        width: 330px;
+    }
+
+    .site-footer__top-inner {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .site-footer__info-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .site-footer__top-border {
+        max-width: 1110px;
+        width: 100%;
+    }
+    
+} 
+
+@media only screen and (min-width: 992px) {
+    
+    .hero-section__inner {
+        justify-content: flex-start;
+    }
+    
+    .hero-section__hero-img {
+        position: absolute;
+        top: 25%;
+        width: 540px;
+        height: 650px;
+    }
+    
+    .hero-section__content-wrapper {
+        position: relative;
+        padding-left: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .hero-section__title {
+        font-size: 72px;
+        margin-top: 63px;
+    }
+
+    .hero-section__title-wrapper {
+        width: 540px;
+    }
+    
+    .hero-section__desc-wrapper {
+        width: 540px;
+    }
+
+    .hero-section__top-border {
+        display: block;
+        width: 150px;
+        margin-right: auto;
+        border-top: 1px solid #fff;
+    }
+    
+    .site-article__title {
+        font-size: 56px;
+        letter-spacing: -0.78px;
+        line-height: 56px;
+        text-align: left;
+    }
+    
+    .site-article__title-wrapper {
+        width: 480px;
+    }
+    
+}
